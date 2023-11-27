@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <head>
+       
+        <nav class="nav-bar">
+
+            <div>
+                <p>Nivel</p>
+                <select id="nivel">
+                    <option>Selecione</option>
+                    <option value="facil">Fácil</option>
+                    <option value="medio">Médio</option>
+                    <option value="dificil">Difícil</option>
+                </select>
+            </div>
+                
+
+            </div>
+
+            <div class="div-tempo">
+                <p>Tempo:<span id="tempo"> 00:00</span></p>
+            </div>
+
+            <div class="div-btn3">
+                <button id="ini">
+                    Iniciar
+                </button>
+                <button id="pas">
+                    Pausar
+                </button>
+                <button id="stopGame">
+                    Parar
+                </button>
+            </div>
+        </nav>
+    </head>
+    <main>
+       
+        <section>
+            <div>
+                <p id="num"></p>
+                <pre id="result"></pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+      
+
+            <div class="foot-acertos">
+                <p >Acertos: <span id="acertos"> </span> <span id="p_acertos">00:00</span> </p>
+
+            </div>
+
+            <div class="foot-erros">
+                <p>Erros: <span id="erros"></span></p>
+            </div>
+
+            <div class="foot-pares">
+            <p >Numero de pares sorteados: <span id="numPares"></span></p>
+            </div>
+          
+    </footer>
+    <script>
+        const autenticado = localStorage.getItem('usuarios');
+    
+        if (!autenticado) {
+            alert('Acesso não autorizado. Faça o login primeiro.');
+            window.location.href = 'login.html'; // Redireciona para a página de login
+        }
+    </script>
+</body>
+
+</html>

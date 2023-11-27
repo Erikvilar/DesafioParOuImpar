@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Flex:opsz@8..144&display=swap');
+*{  
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 100;   
+}p{
+    text-shadow:2px 2px 4px rgba(240, 236, 5, 0.5);
+}
+.nav-bar{
+    display: flex;
+    background-color: black;
+    color: yellow;
+}.nav-bar div{
+    padding: 6px;
+    margin: auto;
+   
+    
+    
+}.lista-fechada {
+    display: none;
+}
+
+.lista-aberta {
+    display: block;
+}
+
+main section div p{
+    
+    text-align: center;
+    
+    margin: auto;
+    font-size: 120px;
+    margin-top: 125px;
+}main section div{
+   
+    width: 1000px;
+    height: 560px;
+    margin: auto;
+    user-select: none;
+
+   
+}
+footer {
+    
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: yellow;
+}footer div{
+    position: relative;
+    flex-direction: row;
+    margin: auto;
+
+    
+}
+/* config btn */
+.div-btn3 button{
+    background-color: plum;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    
+}.div-btn3 button:hover{
+    background-color: white;
+}
+
+/* config cor apresentação */
+.par {
+    color: green;
+    font-weight: 100;
+    
+}
+
+.impar {
+    color: red;
+}span{
+    color: white;
+}pre{
+    
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+@media only screen and (max-width: 1080px) {
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    footer{
+        font-size: 8px;
+        padding: 10px;
+        bottom: 0px;
+        position: fixed;
+      
+
+      
+    }
+    .nav-bar {
+        flex-direction: row;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        
+        font-size: 15px;
+       
+    }#num{
+        
+        font-size: 50px;
+        margin-top: 200px;
+        text-align: center;
+        
+        
+
+   
+      
+
+    }main section div{
+        display: flex;
+  
+        
+        width: 350px;
+        height: 200px;
+        text-align: center;
+        
+    }
+
+    .nav-bar select {
+        margin-top: 10px;
+    }
+
+    .div-btn3 button {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 10px;
+        padding: 5px;
+    }#result{
+       margin-top: 200px;
+
+        
+    }
+}
